@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+ /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial, sans-serif';
+    color: #fff;
+    text-align: center;
+    
+  }
+  
+  .banner {
+    position: relative;
+    width: 1320px;
+    height: 600px;
+    background: url('/images/Banner\ Image.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .overlay {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .small-heading {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  
+  .main-heading {
+    font-size: 64px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1.2;
+  }
+  
+  .main-heading.celebration {
+    margin-top: 10px;
+    color: #ffcc00; /* Golden effect */
+  }
+  
+  .large-text {
+    font-size: 120px;
+    font-weight: bold;
+    color: gold;
+    margin-top: 20px;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+    letter-spacing: 3px;
+  }
+  
+  /* Fireworks effect */
+  .banner2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, transparent, rgba(0, 0, 0, 0.5));
+    z-index: 1;
+  }
+  .banner2{
+    width: 803px;
+    height: 806px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Discount Text */
+  .discount h1 {
+    font-size: 72px;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Subheading */
+  .sub-heading p {
+    font-size: 18px;
+    color: #ff4d4d;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  
+  /* Categories Text */
+  .categories h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Image Styling */
+  .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .banner3 {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 500px;
+    background: url('/images/Vectorrr.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Content Area */
+  .content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .content h1 span {
+    font-weight: 700;
+    color: #ffcc00;
+  }
+  
+  .content p {
+    font-size: 16px;
+    margin: 15px 0;
+    line-height: 1.6;
+    max-width: 400px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff4d4d;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #e60000;
+  }
+  
+  /* Year Decoration */
+  .year-decoration img {
+    max-width: 150px;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  /* Floating Effect */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .event-details {
+    width: 1320px;
+    height: 482px;
+    padding: 100px;
+    text-align: center;
+    background: linear-gradient(to bottom, #fdd, #fff);
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 50px 50px;
+  }
+  
+  /* Highlighted Text */
+  .event-details .highlight {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .event-details p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  /* Join Now Button */
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: darkred;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1220px;
+    height: 460px;
+    border: 2px solid #e4e4e4;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    margin: 50px 50px;
+  }
+  
+  /* Offer Section */
+  .offer {
+    width: 30%;
+  }
+  
+  .best-offer {
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .coming-soon {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Image Section */
+  .image-container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .circle {
+    width: 150px;
+    height: 150px;
+    border: 6px solid red;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Year Section */
+  .year-section {
+    text-align: center;
+    width: 30%;
+  }
+  
+  .year {
+    color: red;
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  
+  .year-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .badge {
+    background: linear-gradient(90deg, #ff4d4d, #ff3333);
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .badge p {
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .banner4 {
+    border: 2px solid #b11226;
+    padding: 20px;
+    max-width: 700px;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  /* Title */
+  .banner-title {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Heading */
+  .banner-heading {
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    color: #000;
+  }
+  
+  .red-text {
+    color: #e41b1b;
+    font-weight: bold;
+  }
+  
+  .bold-text {
+    font-weight: bold;
+  }
+  
+  /* Description */
+  .banner-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+  }
+
+  .container {
+    display: flex;
+    width: 700px;
+    height: 450px;
+    border: 2px solid #b11226;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  /* Left Section (Gift Box with Confetti) */
+  .box {
+    position: relative;
+    flex: 1;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #ff0000;
+  }
+  
+  .confetti {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 150px;
+    background-image: url('/images/Group\ 75.png'); /* Confetti image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  
+  .gift-box img {
+    width: 250px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Right Section (50% Discount Circle) */
+  .discount {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff0000;
+  }
+  
+  .circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid #ff0000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ff0000;
+    text-align: center;
+  }
+  
+  .circle .percentage {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .circle .text {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .portfolio-container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  /* Header Section */
+  .portfolio-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .small-title {
+    font-size: 12px;
+    color: #e41b1b;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  
+  .main-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 16px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Portfolio Grid */
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  
+  .portfolio-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .portfolio-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .newsletter-container {
+    background-color: #fff7f5; /* Light pink background */
+    border: 2px solid #e4e4e4;
+    padding: 30px;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  .icon img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .subscribe-form input {
+    width: 70%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    outline: none;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .subscribe-form input::placeholder {
+    color: #aaa;
+  }
+  
+  .subscribe-form button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subscribe-form button:hover {
+    background-color: #cc0000;
+  }
+
+  .footer {
+    background-color: #111;
+    padding: 20px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-top: 50px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+  }
+  
+  .contact-info,
+  .contact-details {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .social-icons img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+  }
+  
+  .unsubscribe {
+    color: #f00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .unsubscribe:hover {
+    color: #ff3333;
+  }
+  
+  
+  
+  
